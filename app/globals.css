@@ -57,13 +57,22 @@ header{ position:sticky; top:0; z-index:50; background:rgba(18,13,10,.88); backd
 .hero-bg{
   position:absolute; inset:-6% -6%; z-index:0;
   background:
-    radial-gradient(ellipse at 30% 20%, rgba(239,65,35,.35), transparent 55%),
-    radial-gradient(ellipse at 75% 70%, rgba(60,110,100,.4), transparent 50%),
-    linear-gradient(160deg, #1c1610 0%, #0c0906 60%, #060403 100%);
+    radial-gradient(ellipse at 30% 15%, rgba(239,65,35,.48), transparent 60%),
+    radial-gradient(ellipse at 78% 65%, rgba(60,110,100,.5), transparent 55%),
+    radial-gradient(ellipse at 55% 0%, rgba(242,183,5,.14), transparent 45%),
+    linear-gradient(160deg, #2b2118 0%, #17110c 55%, #0a0706 100%);
   animation: kenburns 22s ease-in-out infinite alternate;
 }
 @keyframes kenburns{ 0%{ transform:scale(1) translate(0,0);} 100%{ transform:scale(1.12) translate(-1.5%,-1%);} }
 @media (prefers-reduced-motion:reduce){ .hero-bg{ animation:none; } .grain.live{ animation:none; } }
+
+.hero-route{ position:absolute; top:10%; left:6%; right:6%; z-index:1; pointer-events:none; }
+.hero-route svg{ width:100%; height:auto; display:block; }
+.hero-route .route-ring{ stroke:var(--paper); opacity:.28; }
+.hero-route .route-line{ stroke:var(--paper); opacity:.22; }
+.hero-route .route-halo{ stroke:var(--red); opacity:.4; }
+.hero-route .route-dot{ fill:var(--red); opacity:.95; }
+@media (max-width:800px){ .hero-route{ top:7%; left:4%; right:4%; } }
 
 .letterbox-top,.letterbox-bottom{ position:absolute; left:0; right:0; height:clamp(14px,4vw,34px); background:#000; z-index:3; }
 .letterbox-top{ top:0; } .letterbox-bottom{ bottom:0; }

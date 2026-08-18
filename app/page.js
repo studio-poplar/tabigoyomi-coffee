@@ -50,6 +50,20 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-bg"></div>
+          <div className="hero-route" aria-hidden="true">
+            <svg viewBox="0 0 800 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle className="route-ring" cx="40" cy="220" r="5" strokeWidth="1.5" fill="none" />
+              <path
+                className="route-line"
+                d="M40 220C220 80 560 40 760 110"
+                strokeWidth="1.4"
+                strokeDasharray="2 8"
+                fill="none"
+              />
+              <circle className="route-halo" cx="760" cy="110" r="13" strokeWidth="1" fill="none" />
+              <circle className="route-dot" cx="760" cy="110" r="5" />
+            </svg>
+          </div>
           <div className="grain live"></div>
           <div className="letterbox-top"></div>
           <div className="letterbox-bottom"></div>
