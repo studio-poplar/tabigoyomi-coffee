@@ -50,33 +50,6 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-bg"></div>
-          <div className="hero-cup" aria-hidden="true">
-            <svg viewBox="0 0 240 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                className="cup-steam"
-                d="M100 155C88 130 108 115 96 90C86 68 104 55 94 30"
-                strokeWidth="1.6"
-              />
-              <path
-                className="cup-steam"
-                d="M122 158C112 132 130 118 120 92C112 70 128 58 120 34"
-                strokeWidth="1.6"
-              />
-              <path
-                className="cup-steam"
-                d="M144 158C134 132 150 118 142 94C134 72 148 60 142 40"
-                strokeWidth="1.6"
-              />
-              <ellipse className="cup-line" cx="120" cy="170" rx="55" ry="13" strokeWidth="2" />
-              <path
-                className="cup-line"
-                d="M65 172C63 210 68 240 80 252C95 262 145 262 160 252C172 240 177 210 175 172"
-                strokeWidth="2"
-              />
-              <path className="cup-line" d="M172 185C200 185 200 225 172 225" strokeWidth="2" />
-              <ellipse className="cup-line" cx="120" cy="270" rx="85" ry="14" strokeWidth="1.6" />
-            </svg>
-          </div>
           <div className="grain live"></div>
           <div className="letterbox-top"></div>
           <div className="letterbox-bottom"></div>
@@ -92,6 +65,7 @@ export default function Home() {
             <p className="hero-lede">
               焙煎士が実際に農園まで足を運んだ産地だけを、月にひとつ。
             </p>
+            <div className="hero-rule" aria-hidden="true"></div>
             <div className="hero-cta">
               <a className="btn btn-solid" href="#calendar">
                 今月の産地を見る
