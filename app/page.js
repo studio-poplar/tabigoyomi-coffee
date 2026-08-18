@@ -50,6 +50,20 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-bg"></div>
+          <div className="hero-motif" aria-hidden="true">
+            <svg viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M150 24C210 24 254 96 254 240C254 384 210 476 150 476C90 476 46 384 46 240C46 96 90 24 150 24Z"
+                stroke="#f1ece0"
+                strokeWidth="2"
+              />
+              <path
+                d="M150 64C126 140 178 190 152 250C126 310 176 380 150 442"
+                stroke="#f1ece0"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
           <div className="grain live"></div>
           <div className="letterbox-top"></div>
           <div className="letterbox-bottom"></div>
