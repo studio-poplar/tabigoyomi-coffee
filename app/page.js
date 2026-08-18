@@ -51,30 +51,31 @@ export default function Home() {
         <section className="hero">
           <div className="hero-bg"></div>
           <div className="hero-motif" aria-hidden="true">
-            <svg viewBox="0 0 200 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 320 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* 麻袋 */}
               <path
-                d="M104 8C90 78 96 148 84 208C74 258 92 298 88 334"
+                d="M55 165C40 130 45 85 65 55C75 40 90 28 105 22C112 18 118 26 126 20C134 14 142 24 150 18C160 11 168 22 178 24C195 30 205 55 202 90C200 120 190 148 165 160C130 172 85 172 55 165Z"
                 stroke="#f1ece0"
                 strokeWidth="2"
               />
+              {/* 結び紐 */}
               <path
-                d="M118 8C128 78 118 148 104 208C96 250 104 284 96 310"
-                stroke="#f1ece0"
-                strokeWidth="2"
-              />
-              <circle cx="90" cy="364" r="7" stroke="#f1ece0" strokeWidth="2" />
-              <circle cx="105" cy="400" r="5" stroke="#f1ece0" strokeWidth="1.6" />
-              <circle cx="82" cy="428" r="3.5" stroke="#f1ece0" strokeWidth="1.4" />
-              <path
-                d="M62 452C68 440 80 440 86 450"
+                d="M72 50C58 55 50 70 58 82C64 90 76 88 78 78"
                 stroke="#f1ece0"
                 strokeWidth="1.4"
               />
-              <path
-                d="M118 458C112 446 100 446 94 454"
-                stroke="#f1ece0"
-                strokeWidth="1.4"
-              />
+              {/* こぼれる豆 */}
+              <ellipse cx="150" cy="45" rx="14" ry="9" transform="rotate(-20 150 45)" stroke="#f1ece0" strokeWidth="1.8" />
+              <path d="M141 49C147 43 153 43 159 41" stroke="#f1ece0" strokeWidth="1.2" />
+              <ellipse cx="128" cy="72" rx="13" ry="8" transform="rotate(10 128 72)" stroke="#f1ece0" strokeWidth="1.8" />
+              <path d="M118 71C124 67 132 68 138 73" stroke="#f1ece0" strokeWidth="1.2" />
+              <ellipse cx="108" cy="98" rx="12" ry="7.5" transform="rotate(-15 108 98)" stroke="#f1ece0" strokeWidth="1.6" />
+              <ellipse cx="88" cy="128" rx="11" ry="7" transform="rotate(25 88 128)" stroke="#f1ece0" strokeWidth="1.5" />
+              <ellipse cx="70" cy="156" rx="10" ry="6.5" transform="rotate(-10 70 156)" stroke="#f1ece0" strokeWidth="1.4" />
+              <ellipse cx="97" cy="176" rx="9" ry="6" transform="rotate(15 97 176)" stroke="#f1ece0" strokeWidth="1.3" />
+              <ellipse cx="45" cy="196" rx="8" ry="5" transform="rotate(-20 45 196)" stroke="#f1ece0" strokeWidth="1.2" />
+              <ellipse cx="150" cy="190" rx="7" ry="4.5" transform="rotate(30 150 190)" stroke="#f1ece0" strokeWidth="1.1" />
+              <ellipse cx="30" cy="240" rx="6" ry="4" transform="rotate(5 30 240)" stroke="#f1ece0" strokeWidth="1" />
             </svg>
           </div>
           <div className="grain live"></div>
