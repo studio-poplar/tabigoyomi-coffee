@@ -50,18 +50,31 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-bg"></div>
-          <div className="hero-route" aria-hidden="true">
-            <svg viewBox="0 0 800 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle className="route-ring" cx="40" cy="220" r="5" strokeWidth="1.5" fill="none" />
+          <div className="hero-cup" aria-hidden="true">
+            <svg viewBox="0 0 240 340" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                className="route-line"
-                d="M40 220C220 80 560 40 760 110"
-                strokeWidth="1.4"
-                strokeDasharray="2 8"
-                fill="none"
+                className="cup-steam"
+                d="M100 155C88 130 108 115 96 90C86 68 104 55 94 30"
+                strokeWidth="1.6"
               />
-              <circle className="route-halo" cx="760" cy="110" r="13" strokeWidth="1" fill="none" />
-              <circle className="route-dot" cx="760" cy="110" r="5" />
+              <path
+                className="cup-steam"
+                d="M122 158C112 132 130 118 120 92C112 70 128 58 120 34"
+                strokeWidth="1.6"
+              />
+              <path
+                className="cup-steam"
+                d="M144 158C134 132 150 118 142 94C134 72 148 60 142 40"
+                strokeWidth="1.6"
+              />
+              <ellipse className="cup-line" cx="120" cy="170" rx="55" ry="13" strokeWidth="2" />
+              <path
+                className="cup-line"
+                d="M65 172C63 210 68 240 80 252C95 262 145 262 160 252C172 240 177 210 175 172"
+                strokeWidth="2"
+              />
+              <path className="cup-line" d="M172 185C200 185 200 225 172 225" strokeWidth="2" />
+              <ellipse className="cup-line" cx="120" cy="270" rx="85" ry="14" strokeWidth="1.6" />
             </svg>
           </div>
           <div className="grain live"></div>

@@ -66,13 +66,11 @@ header{ position:sticky; top:0; z-index:50; background:rgba(18,13,10,.88); backd
 @keyframes kenburns{ 0%{ transform:scale(1) translate(0,0);} 100%{ transform:scale(1.12) translate(-1.5%,-1%);} }
 @media (prefers-reduced-motion:reduce){ .hero-bg{ animation:none; } .grain.live{ animation:none; } }
 
-.hero-route{ position:absolute; top:10%; left:6%; right:6%; z-index:1; pointer-events:none; }
-.hero-route svg{ width:100%; height:auto; display:block; }
-.hero-route .route-ring{ stroke:var(--paper); opacity:.28; }
-.hero-route .route-line{ stroke:var(--paper); opacity:.22; }
-.hero-route .route-halo{ stroke:var(--red); opacity:.4; }
-.hero-route .route-dot{ fill:var(--red); opacity:.95; }
-@media (max-width:800px){ .hero-route{ top:7%; left:4%; right:4%; } }
+.hero-cup{ position:absolute; top:6%; right:6%; z-index:1; width:clamp(140px,16vw,240px); pointer-events:none; }
+.hero-cup svg{ width:100%; height:auto; display:block; }
+.hero-cup .cup-line{ stroke:var(--paper); opacity:.3; fill:none; }
+.hero-cup .cup-steam{ stroke:var(--yellow); opacity:.4; fill:none; }
+@media (max-width:800px){ .hero-cup{ width:clamp(100px,26vw,160px); top:4%; right:3%; } }
 
 .letterbox-top,.letterbox-bottom{ position:absolute; left:0; right:0; height:clamp(14px,4vw,34px); background:#000; z-index:3; }
 .letterbox-top{ top:0; } .letterbox-bottom{ bottom:0; }
