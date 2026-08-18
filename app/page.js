@@ -51,16 +51,29 @@ export default function Home() {
         <section className="hero">
           <div className="hero-bg"></div>
           <div className="hero-motif" aria-hidden="true">
-            <svg viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 200 480" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M150 24C210 24 254 96 254 240C254 384 210 476 150 476C90 476 46 384 46 240C46 96 90 24 150 24Z"
+                d="M104 8C90 78 96 148 84 208C74 258 92 298 88 334"
                 stroke="#f1ece0"
                 strokeWidth="2"
               />
               <path
-                d="M150 64C126 140 178 190 152 250C126 310 176 380 150 442"
+                d="M118 8C128 78 118 148 104 208C96 250 104 284 96 310"
                 stroke="#f1ece0"
                 strokeWidth="2"
+              />
+              <circle cx="90" cy="364" r="7" stroke="#f1ece0" strokeWidth="2" />
+              <circle cx="105" cy="400" r="5" stroke="#f1ece0" strokeWidth="1.6" />
+              <circle cx="82" cy="428" r="3.5" stroke="#f1ece0" strokeWidth="1.4" />
+              <path
+                d="M62 452C68 440 80 440 86 450"
+                stroke="#f1ece0"
+                strokeWidth="1.4"
+              />
+              <path
+                d="M118 458C112 446 100 446 94 454"
+                stroke="#f1ece0"
+                strokeWidth="1.4"
               />
             </svg>
           </div>
