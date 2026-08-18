@@ -50,6 +50,16 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-bg"></div>
+          <div className="hero-map" aria-hidden="true">
+            <svg viewBox="0 0 900 460" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M90 70C60 90 55 130 70 160C60 190 75 210 100 205C90 225 100 250 130 245C150 260 165 240 175 220C200 210 220 180 210 150C230 120 220 90 195 75C170 55 130 50 90 70Z" strokeWidth="1.2" />
+              <path d="M190 250C210 245 235 250 250 265C270 280 275 310 265 340C275 370 260 400 240 420C225 440 205 435 200 415C190 390 195 360 185 335C175 305 180 275 190 250Z" strokeWidth="1.2" />
+              <path d="M430 100C420 90 425 75 445 72C465 68 480 78 490 90C500 100 495 115 480 118C465 125 445 122 435 112C430 108 430 104 430 100Z" strokeWidth="1.1" />
+              <path d="M450 130C430 125 415 140 415 165C410 190 420 210 435 225C430 250 440 275 455 295C465 320 480 340 495 355C505 365 515 355 512 340C520 310 515 280 505 255C515 225 520 195 510 168C505 145 480 130 450 130Z" strokeWidth="1.2" />
+              <path d="M520 90C560 60 620 55 670 65C720 55 780 65 810 90C840 105 850 130 830 150C845 170 835 195 810 200C815 220 795 235 770 225C750 240 720 235 705 215C680 220 655 210 645 190C610 195 580 180 570 155C545 150 525 130 520 90Z" strokeWidth="1.2" />
+              <path d="M790 355C810 345 835 350 850 365C865 378 862 398 845 405C825 415 800 410 788 395C780 382 782 365 790 355Z" strokeWidth="1.1" />
+            </svg>
+          </div>
           <div className="grain live"></div>
           <div className="letterbox-top"></div>
           <div className="letterbox-bottom"></div>
