@@ -1,9 +1,30 @@
 import "./globals.css";
 
+const title = "旅暦珈琲 TABIGOYOMI COFFEE | 横浜・焙煎所";
+const description =
+  "横浜のスペシャルティコーヒー焙煎所。毎月ひとつの産地だけを届ける「旅する暦」、旅暦珈琲のWebサイト。";
+const siteUrl = "https://tabigoyomi-coffee.vercel.app";
+
 export const metadata = {
-  title: "旅暦珈琲 TABIGOYOMI COFFEE | 横浜・焙煎所",
-  description:
-    "横浜のスペシャルティコーヒー焙煎所。毎月ひとつの産地だけを届ける「旅する暦」、旅暦珈琲のWebサイト。",
+  title,
+  description,
+  keywords: [
+    "旅暦珈琲",
+    "TABIGOYOMI COFFEE",
+    "横浜 コーヒー",
+    "スペシャルティコーヒー",
+    "焙煎所",
+  ],
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    title,
+    description,
+    url: siteUrl,
+    siteName: "旅暦珈琲 TABIGOYOMI COFFEE",
+    locale: "ja_JP",
+    type: "website",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }) {

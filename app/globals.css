@@ -82,6 +82,7 @@ header{ position:sticky; top:0; z-index:50; background:rgba(18,13,10,.88); backd
 .hero-rule{ width:64px; height:2px; background:var(--red); margin-top:36px; }
 .hero-lede{ max-width:440px; margin-top:26px; color:rgba(241,236,224,.8); font-family:var(--font-serif); font-style:italic; font-size:19px; }
 .hero-cta{ margin-top:32px; display:flex; gap:14px; flex-wrap:wrap; }
+.hero-brandline{ margin-top:28px; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.12em; color:rgba(241,236,224,.45); text-transform:uppercase; }
 .btn{ font-family:var(--font-mono); font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; padding:14px 24px; border-radius:2px; text-decoration:none; display:inline-block; border:1.5px solid var(--paper); transition:background .2s,color .2s; }
 .btn-solid{ background:transparent; color:var(--paper); border-color:var(--paper); border-top-color:var(--red); }
 .btn-solid:hover{ background:var(--paper); color:var(--ink); }
@@ -111,6 +112,18 @@ section{ padding:110px 0; position:relative; z-index:1; }
 .ticket-row{ display:flex; justify-content:space-between; font-size:11px; letter-spacing:.05em; color:var(--yellow); border-bottom:1px dotted rgba(241,236,224,.25); padding-bottom:12px; margin-bottom:14px; text-transform:uppercase; }
 .ticket-body{ font-size:12.5px; color:rgba(241,236,224,.85); line-height:2.1; }
 .ticket-body b{ color:#fff; }
+
+.philosophy-list{ margin-top:44px; border-top:1px solid var(--line); }
+.philo-item{ padding:20px 0; border-bottom:1px dotted rgba(241,236,224,.2); }
+.philo-label{ font-family:var(--font-mono); font-size:11px; letter-spacing:.1em; color:var(--yellow); margin:0; }
+.philo-text{ font-size:14px; color:rgba(241,236,224,.72); margin:8px 0 0; line-height:1.75; }
+
+.quality-detail{ margin-top:22px; }
+.qd-heading{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.1em; color:rgba(241,236,224,.5); text-transform:uppercase; margin:0 0 12px; }
+.qd-grid{ display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--line); border-left:1px solid var(--line); }
+.qd-item{ display:flex; flex-direction:column; gap:6px; padding:16px 18px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
+.qd-label{ font-family:var(--font-mono); font-size:9.5px; letter-spacing:.08em; color:rgba(241,236,224,.5); text-transform:uppercase; }
+.qd-value{ font-family:var(--font-mono); font-size:16px; color:var(--paper); }
 @media (max-width:860px){ .concept-grid{ grid-template-columns:1fr; gap:40px; } }
 
 /* ---------- Origin calendar: tear-sheet cards ---------- */
@@ -128,9 +141,18 @@ section{ padding:110px 0; position:relative; z-index:1; }
 .stamp-month{ font-family:var(--font-mono); font-size:11px; letter-spacing:.05em; color:var(--yellow); text-transform:uppercase; }
 .stamp-card h3{ font-size:26px; margin-top:6px; }
 .stamp-origin{ font-size:12.5px; color:rgba(241,236,224,.7); margin-top:4px; font-family:var(--font-mono); }
+.stamp-specs{ font-size:10.5px; letter-spacing:.03em; color:rgba(241,236,224,.55); margin-top:8px; font-family:var(--font-mono); text-transform:uppercase; }
 .stamp-notes{ margin-top:14px; padding-top:14px; border-top:1px dotted rgba(241,236,224,.25); font-size:13px; color:rgba(241,236,224,.7); }
 @media (max-width:900px){ .stamps-grid{ grid-template-columns:1fr 1fr; } }
 @media (max-width:600px){ .stamps-grid{ grid-template-columns:1fr; } }
+
+/* ---------- Roasting Journal: editorial log ---------- */
+.journal-list{ border-top:1px solid var(--line); }
+.journal-entry{ display:grid; grid-template-columns:170px 1fr; gap:28px; padding:32px 0; border-bottom:1px dotted rgba(241,236,224,.2); }
+.journal-month{ font-family:var(--font-mono); font-size:12px; letter-spacing:.08em; color:var(--yellow); display:block; text-transform:uppercase; }
+.journal-place{ font-family:var(--font-display); font-size:16px; margin-top:8px; display:block; }
+.journal-text{ font-family:var(--font-serif); font-style:italic; font-size:16.5px; line-height:1.8; color:rgba(241,236,224,.82); margin:0; }
+@media (max-width:700px){ .journal-entry{ grid-template-columns:1fr; gap:10px; } }
 
 /* ---------- Menu: magazine gear-guide list ---------- */
 .menu{ background:var(--paper); color:var(--ink); }
@@ -139,7 +161,8 @@ section{ padding:110px 0; position:relative; z-index:1; }
 .menu-list{ border-top:2px solid var(--ink); }
 .menu-row{ display:flex; gap:24px; align-items:flex-start; padding:26px 0; border-bottom:1px solid rgba(20,16,13,.15); }
 .menu-row .idx{ font-family:var(--font-display); font-size:34px; color:rgba(20,16,13,.18); width:56px; flex-shrink:0; }
-.menu-row .name{ font-family:var(--font-display); font-size:21px; letter-spacing:.01em; }
+.menu-row .name{ font-family:var(--font-display); font-size:21px; letter-spacing:.01em; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.menu-label{ font-family:var(--font-mono); font-size:9.5px; letter-spacing:.07em; color:var(--ink-soft); border-bottom:1.5px solid var(--yellow); padding-bottom:2px; text-transform:uppercase; }
 .menu-row .desc{ font-size:13.5px; color:var(--ink-soft); margin-top:6px; max-width:480px; font-family:var(--font-body); }
 .menu-row .price{ font-family:var(--font-mono); font-size:14px; margin-left:auto; white-space:nowrap; padding-top:6px; }
 
