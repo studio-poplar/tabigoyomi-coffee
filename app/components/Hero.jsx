@@ -24,8 +24,9 @@ export default function Hero() {
           毎月、
           <span className="line2">
             違う<span className="accent-outline">国</span>の朝が
+            <br className="line2-mobile-break" />
+            届く。
           </span>
-          <span className="line3">届く。</span>
         </h1>
         <p className="hero-lede">
           焙煎士が実際に農園まで足を運んだ産地だけを、月にひとつ。
