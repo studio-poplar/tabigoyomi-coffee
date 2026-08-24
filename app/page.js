@@ -56,8 +56,8 @@ export default function Home() {
               <div>
                 <p className="eyebrow">CONCEPT</p>
                 <h2 style={{ marginTop: 14 }}>
-                  在庫を増やさず、<br />
-                  物語を削らない。
+                  在庫は、持たない。<br />
+                  物語は、削らない。
                 </h2>
                 <div className="pullquote" style={{ marginTop: 34 }}>
                   渡すのは豆じゃない。誰が、どんな土地で、どう育てたかという暦だ。

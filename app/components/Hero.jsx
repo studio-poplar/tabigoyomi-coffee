@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="letterbox-top"></div>
       <div className="letterbox-bottom"></div>
 
-      <div className="hero-main wrap" style={{ paddingLeft: 0, paddingRight: 0 }}>
+      <div className="hero-main">
         <span className="hero-tag">EST. 2019 — 焙煎所</span>
         <h1>
           毎月、

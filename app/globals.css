@@ -72,7 +72,8 @@ header{ position:sticky; top:0; z-index:50; background:rgba(18,13,10,.88); backd
 .letterbox-top,.letterbox-bottom{ position:absolute; left:0; right:0; height:clamp(14px,4vw,34px); background:#000; z-index:3; }
 .letterbox-top{ top:0; } .letterbox-bottom{ bottom:0; }
 
-.hero-main{ position:relative; z-index:2; padding:120px 28px 74px; }
+.hero-main{ position:relative; z-index:2; max-width:1240px; margin:0 auto; padding:120px 28px 74px; }
+@media (max-width:760px){ .hero-main{ padding:84px 22px 52px; } }
 .hero-tag{ display:inline-block; font-family:var(--font-mono); font-size:11px; letter-spacing:.16em; color:rgba(241,236,224,.75); background:transparent; border:1px solid rgba(241,236,224,.32); padding:7px 14px; margin-bottom:26px; }
 .hero-main h1{
   font-size:clamp(48px,9.4vw,132px); line-height:.96; margin:0;
@@ -84,7 +85,7 @@ header{ position:sticky; top:0; z-index:50; background:rgba(18,13,10,.88); backd
 .hero-cta{ margin-top:32px; display:flex; gap:14px; flex-wrap:wrap; }
 .hero-brandline{ margin-top:28px; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.12em; color:rgba(241,236,224,.45); text-transform:uppercase; }
 .btn{ font-family:var(--font-mono); font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; padding:14px 24px; border-radius:2px; text-decoration:none; display:inline-block; border:1.5px solid var(--paper); transition:background .2s,color .2s; }
-.btn-solid{ background:transparent; color:var(--paper); border-color:var(--paper); border-top-color:var(--red); }
+.btn-solid{ background:transparent; color:var(--paper); border-color:var(--paper); }
 .btn-solid:hover{ background:var(--paper); color:var(--ink); }
 .btn-outline:hover{ background:var(--paper); color:var(--ink); }
 
@@ -102,6 +103,10 @@ section{ padding:110px 0; position:relative; z-index:1; }
 .section-head{ max-width:680px; margin-bottom:56px; }
 .section-head h2{ font-size:clamp(36px,5vw,64px); margin-top:12px; }
 .section-head p{ color:rgba(241,236,224,.65); margin-top:16px; font-size:15.5px; max-width:520px; }
+@media (max-width:760px){
+  section{ padding:64px 0; }
+  .section-head{ margin-bottom:38px; }
+}
 
 /* ---------- Concept: editorial spread ---------- */
 .concept-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:60px; align-items:start; }
@@ -125,6 +130,13 @@ section{ padding:110px 0; position:relative; z-index:1; }
 .qd-label{ font-family:var(--font-mono); font-size:9.5px; letter-spacing:.08em; color:rgba(241,236,224,.5); text-transform:uppercase; }
 .qd-value{ font-family:var(--font-mono); font-size:16px; color:var(--paper); }
 @media (max-width:860px){ .concept-grid{ grid-template-columns:1fr; gap:40px; } }
+@media (max-width:600px){
+  .philosophy-list{ margin-top:32px; }
+  .philo-item{ padding:16px 0; }
+  .quality-detail{ margin-top:18px; }
+  .qd-item{ padding:12px 14px; }
+  .ticket{ padding:22px 18px; }
+}
 
 /* ---------- Origin calendar: tear-sheet cards ---------- */
 .stamps-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
@@ -152,7 +164,8 @@ section{ padding:110px 0; position:relative; z-index:1; }
 .journal-month{ font-family:var(--font-mono); font-size:12px; letter-spacing:.08em; color:var(--yellow); display:block; text-transform:uppercase; }
 .journal-place{ font-family:var(--font-display); font-size:16px; margin-top:8px; display:block; }
 .journal-text{ font-family:var(--font-serif); font-style:italic; font-size:16.5px; line-height:1.8; color:rgba(241,236,224,.82); margin:0; }
-@media (max-width:700px){ .journal-entry{ grid-template-columns:1fr; gap:10px; } }
+@media (max-width:700px){ .journal-entry{ grid-template-columns:1fr; gap:10px; padding:24px 0; } }
+@media (max-width:600px){ .journal-text{ font-size:15px; } }
 
 /* ---------- Menu: magazine gear-guide list ---------- */
 .menu{ background:var(--paper); color:var(--ink); }
