@@ -78,7 +78,8 @@ header{ position:sticky; top:0; z-index:50; background:rgba(18,13,10,.88); backd
 .hero-main h1{
   font-size:clamp(48px,9.4vw,132px); line-height:.96; margin:0;
 }
-.hero-main h1 .line2{ display:block; margin-top:2px; }
+.hero-main h1 .line2{ display:block; margin-top:2px; white-space:nowrap; }
+.hero-main h1 .line3{ display:block; white-space:nowrap; }
 .hero-main h1 .accent-outline{ -webkit-text-stroke:2px var(--red); color:transparent; }
 .hero-rule{ width:64px; height:2px; background:var(--red); margin-top:36px; }
 .hero-lede{ max-width:440px; margin-top:26px; color:rgba(241,236,224,.8); font-family:var(--font-serif); font-style:italic; font-size:19px; }
@@ -194,9 +195,11 @@ section{ padding:110px 0; position:relative; z-index:1; }
     radial-gradient(ellipse at 50% 45%, rgba(242,183,5,.06), transparent 62%),
     linear-gradient(165deg,#1a140e,#0a0705 85%);
 }
-.spec-frame .contours{ position:absolute; inset:0; opacity:.5; }
-.spec-frame .contours svg{ width:100%; height:100%; }
-.spec-frame .marker{ position:absolute; top:47%; left:53%; width:9px; height:9px; border-radius:50%; background:var(--red); box-shadow:0 0 0 1px rgba(241,236,224,.4), 0 0 22px 4px rgba(239,65,35,.45); transform:translate(-50%,-50%); }
+.spec-frame .map-lines{ position:absolute; inset:0; opacity:.55; }
+.spec-frame .map-lines svg{ width:100%; height:100%; }
+.spec-frame .map-roads{ stroke:var(--paper); }
+.spec-frame .map-water{ stroke:var(--teal); opacity:.8; }
+.spec-frame .marker{ position:absolute; width:9px; height:9px; border-radius:50%; background:var(--red); box-shadow:0 0 0 1px rgba(241,236,224,.4), 0 0 22px 4px rgba(239,65,35,.45); transform:translate(-50%,-50%); }
 .spec-frame .marker::after{ content:""; position:absolute; inset:-13px; border:1px solid rgba(239,65,35,.35); border-radius:50%; }
 .spec-frame .coord{ position:absolute; bottom:20px; left:22px; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.06em; color:rgba(241,236,224,.55); line-height:1.7; }
 .spec-frame .locname{ position:absolute; top:20px; right:22px; font-family:var(--font-serif); font-style:italic; font-size:15px; color:rgba(241,236,224,.75); text-align:right; }

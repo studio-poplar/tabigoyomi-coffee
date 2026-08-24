@@ -4,6 +4,12 @@ import OriginCalendar from "./components/OriginCalendar";
 import Footer from "./components/Footer";
 import { origins, currentOrigin } from "./data/originData";
 import { menuItems } from "./data/menuData";
+import {
+  STORE_MAP_VIEWBOX,
+  STORE_MAP_ROADS_PATH,
+  STORE_MAP_WATER_PATH,
+  STORE_MARKER_POSITION,
+} from "./data/storeMapPath";
 
 const philosophy = [
   {
@@ -211,17 +217,10 @@ export default function Home() {
               </dd>
             </dl>
             <div className="spec-frame">
-              <div className="contours">
-                <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" fill="none">
-                  <ellipse cx="212" cy="140" rx="70" ry="52" stroke="#f1ece0" strokeWidth="0.6" />
-                  <ellipse cx="212" cy="140" rx="115" ry="86" stroke="#f1ece0" strokeWidth="0.6" />
-                  <ellipse cx="212" cy="140" rx="160" ry="120" stroke="#f1ece0" strokeWidth="0.6" />
-                  <ellipse cx="212" cy="140" rx="205" ry="154" stroke="#f1ece0" strokeWidth="0.5" />
-                  <path
-                    d="M0 210 C 90 180, 150 230, 260 190 S 400 150, 400 150"
-                    stroke="#f1ece0"
-                    strokeWidth="0.5"
-                  />
+              <div className="map-lines">
+                <svg viewBox={STORE_MAP_VIEWBOX} preserveAspectRatio="xMidYMid slice" fill="none">
+                  <path className="map-water" d={STORE_MAP_WATER_PATH} strokeWidth="1" />
+                  <path className="map-roads" d={STORE_MAP_ROADS_PATH} strokeWidth="0.8" />
                 </svg>
               </div>
               <span className="locname">
@@ -229,7 +228,7 @@ export default function Home() {
                 <br />
                 Bay Area
               </span>
-              <div className="marker"></div>
+              <div className="marker" style={STORE_MARKER_POSITION}></div>
               <span className="coord">
                 35.4437° N
                 <br />
