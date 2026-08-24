@@ -36,8 +36,8 @@ export default function Home() {
                 <div className="fn">YOKOHAMA</div>
                 <div className="ff">焙煎所</div>
               </div>
-              {origins.map((o) => (
-                <div className="film-frame" key={o.id}>
+              {[...origins].reverse().map((o) => (
+                <div className={`film-frame${o.isCurrent ? " now" : ""}`} key={o.id}>
                   <div className="fc">
                     {o.monthEn}
                     {o.isCurrent ? " — NOW" : ""}
@@ -60,7 +60,7 @@ export default function Home() {
                   物語は、削らない。
                 </h2>
                 <div className="pullquote" style={{ marginTop: 34 }}>
-                  渡すのは豆じゃない。誰が、どんな土地で、どう育てたかという暦だ。
+                  渡すのは豆じゃない。誰が、どんな土地で、どう育てたかという暦。
                 </div>
                 <div className="concept-copy">
                   <p>
@@ -143,7 +143,7 @@ export default function Home() {
               <p>産地暦の裏側にある、その月ごとの小さな記録。</p>
             </div>
             <div className="journal-list">
-              {origins.map((o) => (
+              {[...origins].reverse().map((o) => (
                 <article className="journal-entry" key={o.id}>
                   <div className="journal-meta">
                     <span className="journal-month">

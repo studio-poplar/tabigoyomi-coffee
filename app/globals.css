@@ -93,7 +93,8 @@ header{ position:sticky; top:0; z-index:50; background:rgba(18,13,10,.88); backd
 .filmstrip{ background:#000; border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow-x:auto; position:relative; z-index:2; }
 .filmstrip-track{ display:flex; min-width:640px; }
 .film-frame{ flex:1; padding:22px 20px; border-right:1px dashed rgba(241,236,224,.2); text-align:center; }
-.film-frame:last-child{ border-right:none; background:rgba(239,65,35,.12); }
+.film-frame:last-child{ border-right:none; }
+.film-frame.now{ background:rgba(239,65,35,.12); }
 .film-frame .fc{ font-family:var(--font-mono); font-size:11px; color:var(--ink-soft); }
 .film-frame .fn{ font-family:var(--font-display); font-size:20px; margin-top:6px; letter-spacing:.02em; }
 .film-frame .ff{ font-size:11.5px; color:rgba(241,236,224,.55); margin-top:2px; font-family:var(--font-mono); }
