@@ -72,7 +72,7 @@ header{ position:sticky; top:0; z-index:50; background:rgba(18,13,10,.88); backd
 .letterbox-top,.letterbox-bottom{ position:absolute; left:0; right:0; height:clamp(14px,4vw,34px); background:#000; z-index:3; }
 .letterbox-top{ top:0; } .letterbox-bottom{ bottom:0; }
 
-.hero-main{ position:relative; z-index:2; max-width:1240px; margin:0 auto; padding:120px 28px 74px; }
+.hero-main{ position:relative; z-index:2; max-width:1600px; margin:0 auto; padding:120px 28px 74px; }
 @media (max-width:760px){ .hero-main{ padding:84px 22px 52px; } }
 .hero-tag{ display:inline-block; font-family:var(--font-mono); font-size:11px; letter-spacing:.16em; color:rgba(241,236,224,.75); background:transparent; border:1px solid rgba(241,236,224,.32); padding:7px 14px; margin-bottom:26px; }
 .hero-main h1{
